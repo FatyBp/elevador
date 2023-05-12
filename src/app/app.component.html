@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Title</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col mt-4">
+        <h1>Programa de Elevador</h1>
+
+        <div>
+          <br>
+          <label for="floor">Piso: </label>
+          <select id="floor">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div>
+          <br>
+          <h4>La capacidad maxima de peso es de 700kg </h4>
+          <label for="weight">Personas:</label>
+          <input type="number" id="weight" name="weight" min="0" max="1000" class="from-control">
+        </div>
+        <br>
+        <div>
+          <label for="weight">:</label>
+          <input type="number" id="weight" name="weight" min="0" max="1000" class="from-control">
+        </div>
+
+        <button (click)="goToFloor()" class="btn btn-outline-success">Ir</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
