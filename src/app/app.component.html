@@ -12,12 +12,11 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col mt-4">
+      <div class="col">
         <h1>Programa de Elevador</h1>
 
         <div>
-          <br>
-          <label for="floor">Piso: </label>
+          <label for="floor">Piso:</label>
           <select id="floor">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -26,20 +25,21 @@
             <option value="5">5</option>
           </select>
         </div>
-
+        <br>
         <div>
-          <br>
-          <h4>La capacidad maxima de peso es de 700kg </h4>
-          <label for="weight">Personas:</label>
-          <input type="number" id="weight" name="weight" min="0" max="1000" class="from-control">
+          <label for="weight">Peso:</label>
+          <input type="number" id="weight" name="weight" min="0" max="1000">
         </div>
         <br>
         <div>
-          <label for="weight">:</label>
-          <input type="number" id="weight" name="weight" min="0" max="1000" class="from-control">
+          <label for="people">Personas:</label>
+          <input type="number" id="people" name="people" min="0" max="10">
         </div>
+        <br>
+        <button class="btn btn-outline-primary me-4" (click)="Asc()">Ascienden</button>
+        <button class="btn btn-outline-secondary me-4" (click)="Desc()">Descienden</button>
+        <button class="btn btn-outline-info" (click)="goToFloor()">Ir</button>
 
-        <button (click)="goToFloor()" class="btn btn-outline-success">Ir</button>
       </div>
     </div>
   </div>
